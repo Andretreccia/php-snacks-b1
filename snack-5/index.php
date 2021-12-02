@@ -7,7 +7,6 @@ $text = "Ad ogni ciclo il valore dell'elemento corrente dell'array viene assegna
 explode(".", $text );
 
 $array = explode(".", $text );
-$keys = array_keys($array);
 ?>
 
 <!DOCTYPE html>

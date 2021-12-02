@@ -57,6 +57,7 @@ $posts = [
     <?php foreach($posts as $key => $value) { 
         $post = $value;
         ?>
+        
        <h2> <?php echo $key ?> </h2>
        <hr>
 
