@@ -1,40 +1,32 @@
 <?php
-
-$giornata_x = [
-            [
-                $casa = [
-                'nome' => 'squadra1',
-                'punti'=> 22 ,
+/* Creiamo un array contenente le partite di basket di un’ipotetica tappa del calendario. Ogni array avrà una squadra di casa e una squadra ospite, punti fatti dalla squadra di casa e punti fatti dalla squadra ospite. Stampiamo a schermo tutte le partite con questo schema. */
+$partite = [
+            [   
+                'nome_casa' => 'squadra1',
+                'punti_casa'=> 22 ,
+                'nome_ospite' => 'squadra2',
+                'punti_ospite' => 44,
+            ],
+            [   
+                'nome_casa' => 'squadra3',
+                'punti_casa'=> 265 ,
+                'nome_ospite' => 'squadra4',
+                'punti_ospite' => 40,
             ], 
-
-                $ospite =[
-                  'nome' => 'squadra2',
-                'punti' => 44,
-              ]
-                ],
-                [
-                $casa = [
-                'nome' => 'squadra3',
-                'punti'=> 22 ,
+            [   
+                'nome_casa' => 'squadra6',
+                'punti_casa'=> 12 ,
+                'nome_ospite' => 'squadra67',
+                'punti_ospite' => 64,
             ], 
-
-                $ospite =[
-                  'nome' => 'squadra5',
-                'punti' => 15,
-              ]
-            ] ,[
-                $casa = [
-                'nome' => 'squadra8',
-                'punti'=> 55 ,
-            ], 
-
-                $ospite =[
-                  'nome' => 'squadra1',
-                'punti' => 60,
-              ]
-            ]      
+            [   
+                'nome_casa' => 'squadra4567',
+                'punti_casa'=> 262 ,
+                'nome_ospite' => 'squadra567',
+                'punti_ospite' => 4455,
+            ],          
                 ];
- var_dump($giornata_x);
+ //var_dump($giornata_x);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -45,8 +37,18 @@ $giornata_x = [
     <title>Document</title>
 </head>
 <body>
-    <?php for ($i=0; $i < 3; $i++) { ?> 
-        
+    <?php for ($i=0; $i < count($partite); $i++) { ?> 
+    <p>
+        <?= $partite[$i]['nome_casa'] ?> 
+        -
+        <?= $partite[$i]['nome_ospite'] ?> 
+        |
+        <?= $partite[$i]['punti_casa'] ?> 
+
+        <?= $partite[$i]['punti_ospite'] ?> 
+
+    </p>
+            
     <?php } ?>
 </body>
 </html>
