@@ -41,6 +41,7 @@ $posts = [
     ],
 ];
 
+//$keys = array_keys($posts);
 
 ?>
 
@@ -53,6 +54,25 @@ $posts = [
     <title>Document</title>
 </head>
 <body>
-        
+    <?php foreach($posts as $key => $value) { 
+        $post = $value;
+        ?>
+       <h2> <?php echo $key ?> </h2>
+       <hr>
+
+       <?php foreach($post as $key => $value) { 
+           
+           
+           
+           
+           ?>
+           <p> titolo: <?php echo $value['title']; ?></p>
+           <p> autore: <?php echo $value['author']; ?></p>
+           <p>testo:  <?php echo $value['text']; ?></p>
+           <p>________</p>
+           
+
+   <?php } ?>
+    <?php } ?>
 </body>
 </html>
