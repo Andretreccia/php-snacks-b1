@@ -7,7 +7,7 @@ $name = $_GET['name'];
 
 $email = $_GET['email'];
 
-$age = intval( $_GET['age'] );
+$age = $_GET['age'];
 
 
 if ( strlen($name) > 3 && strpos($email, '@') && strpos($email, '.') && is_numeric($age) == true ) {
