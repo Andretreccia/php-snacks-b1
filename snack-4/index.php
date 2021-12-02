@@ -4,7 +4,7 @@
 //rand(min,max);
 //if else
 //in_array
-//array_push($array, "q", "4");
+//array_push($array, "",);
 
 $array = [];
 
@@ -15,5 +15,4 @@ while (count($array) < 15 ){
     };
 };
 var_dump($array);
-
 ?>

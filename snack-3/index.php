@@ -42,10 +42,6 @@ $posts = [
 ];
 
 
- for ($i=0; $i < count($posts['10/01/2019']); $i++) { 
- 
-       var_dump($posts['10/01/2019'][$i]);            
- } 
 ?>
 
 <!DOCTYPE html>
@@ -57,6 +53,6 @@ $posts = [
     <title>Document</title>
 </head>
 <body>
-
+        
 </body>
 </html>
