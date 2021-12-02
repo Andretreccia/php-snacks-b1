@@ -7,7 +7,7 @@ $name = $_GET['name'];
 
 $email = $_GET['email'];
 
-$age = $_GET[num];
+$age = settype( $_GET['age']);
 
 
 if ( strlen($name) > 3 && strpos($email, '@') && strpos($email, '.') && is_numeric($age) == true ) {
@@ -28,6 +28,15 @@ var_dump($result)
     <title>Document</title>
 </head>
 <body>
-    <form action=""></form>
+     <form action="./index.php">
+        <label for="name">Inserire un nome:</label>
+        <input type="name" name="name" id="name">
+        <label for="email">Inserire una mail:</label>
+        <input type="email" name="email" id="email">
+        <label for="age">Inserire l'età:</label>
+        <input type="age" name="age" id="age">
+        <input type="submit">
+    </form>
+     <p><?= $result ?></p>
 </body>
 </html>
