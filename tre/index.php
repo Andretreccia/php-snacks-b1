@@ -40,6 +40,12 @@ $posts = [
         ]
     ],
 ];
+
+
+ for ($i=0; $i < count($posts['10/01/2019']); $i++) { 
+ 
+       var_dump($posts['10/01/2019'][$i]);            
+ } 
 ?>
 
 <!DOCTYPE html>
@@ -52,11 +58,5 @@ $posts = [
 </head>
 <body>
 
-     <?php for ($i=0; $i < count($posts); $i++) { ?> 
-    <p>
-        <?= var_dump($posts[$i]) ?> 
-    </p>
-            
-    <?php } ?>
 </body>
 </html>
